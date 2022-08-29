@@ -88,7 +88,7 @@ endif()
 
 # METIS
 if(DEFINED ENV{METIS_HOME})
-  find_library(metis_LIBRARY NAMES metis PATHS $ENV{METIS_HOME}/lib NO_DEFAULT_PATH)
+  find_library(metis_LIBRARY NAMES metis PATHS $ENV{METIS_HOME}/lib/x86_64-linux-gnu NO_DEFAULT_PATH)
   set(metis_INCLUDE_DIR $ENV{METIS_HOME}/include)
   message(STATUS "Found metis:")
   message(STATUS "  (Headers)       ${metis_INCLUDE_DIR}")
